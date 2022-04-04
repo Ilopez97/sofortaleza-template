@@ -1,0 +1,817 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@200;300;400;500;600;700;800;900&display=swap');
+
+*{
+    font-family: 'Heebo', sans-serif;
+    font-size: 15px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 1.25rem;
+    color: #1B4F5D;
+}
+
+.bk-asociados{
+    background-image: url("../images/sofortaleza-asociados.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bk-solicitalo{
+    background-image: url("../images/sofortaleza-solicitalo-ahora.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container-all-fd .container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#col-fd{
+    max-width: 550px !important;
+}
+
+.card-fd{
+    border-radius: 0px !important;
+}
+
+.title-form-fd{
+    font-size: calc(1rem + 1.3vw);
+    text-align: center;
+    color: #1B4F5D;
+}
+
+.form-label-fd{
+    font-weight: 500;
+}
+
+.form-control-fd{
+    border-radius: 0px;
+    border: 2px solid #066B8E;
+    padding: 8px 15px;
+}
+
+.button_box-fd{
+    padding: 10px 0px;
+}
+.a-menu{
+    text-transform: uppercase !important;
+    color: #1B4F5D !important;
+}
+.a-menu:hover{
+    text-transform: uppercase !important;
+    color: #FDC34E !important;
+}
+.btn-fd{
+    background-color: #FDC34E;
+    border-radius: 10px;
+    padding: 8px 40px;
+    font-weight: 500;
+    min-width: 220px;
+}
+.btn-sec{
+    background-color: #333333;
+    border-radius: 10px;
+    padding: 8px 40px;
+    font-weight: 500;
+    min-width: 220px;
+    color:white;
+}
+
+.btn-fd:hover{
+    background-color: #333333;
+    color: white;
+}
+.btn-sec:hover{
+    background-color: #FDC34E;
+    color: black;
+}
+
+.link-form-fd{
+    font-size: 0.8em;
+}
+
+.pd-5-fd{
+    padding: 2.5rem !important;
+}
+
+@media screen and (max-width: 768px){
+    *{
+        font-size: 16px;
+    }
+    .pd-5-fd{
+        padding: 1.2rem !important;
+    }
+}
+
+@media screen and (min-width: 1200px){
+    h2{
+        font-size: 2.2rem;
+    }
+    .title-form-fd{
+        font-size: 1.8rem;
+    }
+}
+
+@media screen and (min-width: 1400px){
+    .title-form-fd{
+        font-size: 1.8rem;
+    }
+}
+
+/* estilos del home */
+.bk-home1{
+    background-image: url("../images/sofotaleza-home.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.bk-home2{
+    background-image: url("../images/sofortaleza-header-legal.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.bk-home-2{
+    background: rgb(9,57,68);
+    background: linear-gradient(120deg, rgba(9,57,68,1) 0%, rgba(29,90,106,1) 70%, rgba(35,103,121,1) 100%);
+}
+
+.bk-col-home-4{
+    background-image: url("../images/sofortaleza-acerca.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bk-col-home-5{
+    background-image: url("../images/sofotaleza-home.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bk-home-4{
+    background: rgb(51,51,51);
+    background: linear-gradient(90deg, rgba(19,18,18,1) 0%, rgba(51,51,51,1) 50%, rgba(19,18,18,1) 100%);
+}
+
+.title-section-w-fd,
+.font-color-w{
+    color: white;
+}
+
+.title-section-g-fd,
+.font-color-g{
+    color: #1B4F5D;
+}
+
+.title-section-o-fd{
+    color: #FDC34E;
+}
+
+.title-thin{
+    font-weight: normal;
+}
+
+.t-large{
+    font-size: 3.2rem;
+}
+
+.text-impact{
+    font-size: 1.2rem;
+}
+
+.row-fd{
+    height: 100%;
+}
+
+.col-pleca-fd{
+    height: 100%;
+    background-image: url("../images/sofortaleza-diagonales-2.svg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.col-son-fd{
+    width: 70%;
+}
+
+.pd-fd,
+.pd-r-fd,
+.pd-r0-fd{
+    padding: 50px;
+}
+
+.pd-sm-fd{
+    padding: 20px;
+}
+
+.pd-sm-fd-2{
+    padding: 30px;
+}
+
+.img-fd{
+    width: 95%;
+}
+
+.img-bk-only-movil-fd{
+    width: 100%;
+    display: none;
+}
+
+.w50-fd{
+    width: 50%;
+}
+
+.w70-fd{
+    width: 70%;
+}
+
+.container-flex-row-responsive-col,
+.container-flex-row-responsive-col-sm{
+    display: flex;
+    flex-direction: row;
+}
+
+.text-justify-fd{
+    text-align: justify;
+}
+
+.space-content-fd{
+    padding-left: 40px;
+}
+
+img.icon-svg {
+    width: 70%;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 1rem;
+    border: solid 3px #ffffff;
+    padding: 1.5em;
+}
+
+img.icon-svg-2 {
+    width: 45%;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 1rem;
+    border: solid 3px #066B8E;
+    padding: 1.5em;
+}
+
+img.icon-svg-3 {
+    width: 55%;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 1rem;
+    border: solid 3px #ffffff;
+    padding: 1.5em;
+}
+
+@media screen and (max-width: 576px){
+    .bk-home1{
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .bk-col-home-4{
+        display: none;
+    }
+    .bk-col-home-5{
+        display: none;
+    }
+    .img-bk-only-movil-fd{
+        display: block;
+    }
+    .col-pleca-fd{
+        height: 70%;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+    .t-large{
+        font-size: 2.8rem;
+    }
+    .col-son-fd{
+        width: 90%;
+    }
+    .pd-fd{
+        padding: 50px 15px;
+    }
+    .pd-r-fd{
+        padding: 50px 0px;
+    }
+    .pd-r0-fd{
+        padding: 50px 0px 0px 0px;
+    }
+    .pd-sm-fd{
+        padding: 20px 5px;
+    }
+    .pd-content-responsive{
+        padding: 0px 15px;
+    }
+    .w50-fd,
+    .w70-fd{
+        width: 100%;
+    }
+    .container-flex-row-responsive-col,
+    .container-flex-row-responsive-col-sm{
+        display: flex;
+        flex-direction: column;
+    }
+    .space-content-fd{
+        padding-left: 25px;
+        padding-bottom: 25px;
+    }
+}
+
+@media screen and (min-width: 577px) and (max-width: 768px){
+    .bk-home1{
+        background-position: center right;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .col-pleca-fd{
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+    .col-son-fd{
+        width: 90%;
+    }
+    .pd-fd{
+        padding: 50px 25px;
+    }
+    .col-md-2-fd {
+        flex: 0 0 auto;
+        width: 31%;
+    }
+    .col-sm-6-fd{
+        flex: 0 0 auto;
+        width: 100%;
+    }
+    .space-content-fd{
+        padding-left: 25px;
+        padding-bottom: 25px;
+    }
+    .container-flex-row-responsive-col-sm{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px){
+    .pd-sm-fd{
+        padding: 20px 15px;
+    }
+    .col-md-2-fd {
+        flex: 0 0 auto;
+        width: 18%;
+    }
+    .col-sm-6-fd{
+        flex: 0 0 auto;
+        width: 50%;
+    }
+    .space-content-fd{
+        padding-left: 30px;
+        padding-bottom: 30px;
+    }
+    .container-flex-row-responsive-col-sm{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media screen and (min-width: 1024px){
+    .col-md-2-fd {
+        flex: 0 0 auto;
+        width: 16%;
+    }
+    .col-sm-6-fd{
+        flex: 0 0 auto;
+        width: 50%;
+    }
+}
+
+@media screen and (min-width: 1400px){
+    .col-pleca-fd{
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .img-fd{
+        width: 80%;
+    }
+}
+
+/* estilos de para empresas */ 
+.container-all-head-fd{
+    height: 34em;
+}
+
+.container-all-head-fd .bk-home-2{
+    height: 100%;
+}
+
+.bk-empresas1{
+    background-image: url("../images/sofotaleza-home.jpg");
+    background-position: center right;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.pd-all-fd{
+    padding: 25px;   
+}
+
+/* estilos legales */
+
+.bk-header-legales{
+    background-image: url("../images/sofortaleza-header-legal.jpg");
+    background-position: center left;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 24em;
+}
+
+.bl-text-legal{
+    background: rgb(195,195,195);
+    background: linear-gradient(120deg, rgba(195,195,195,1) 0%, rgba(241,241,241,1) 25%, rgba(241,241,241,1) 75%, rgba(195,195,195,1) 100%);
+}
+
+.text-justify-fd{
+    text-align: justify;
+}
+
+.subtitle-politicas-fd{
+    font-size: 1.4rem;
+}
+
+@media screen and (max-width: 576px){
+    .only-desk-fd{
+        display: none;
+    }
+}
+
+/* aquí empieza lo de Cesar */
+
+.header-section{
+    background-image: url("../images/sofortaleza-asociados.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 22em;
+}
+
+.head-title{
+    margin-top: 10%;
+}
+
+.head-title h2{
+    margin-bottom: 0;
+}
+
+.card-in{
+    min-height: 250px;
+    background: #EFEFEF;
+    border-radius: 15px;
+    margin: 0.5em;
+    padding: 1em;
+}
+
+.card-in .green-type{
+    color: #004456;
+    font-weight: 600;
+}
+
+.card-in p{
+    margin-bottom: .65rem;
+}
+
+/* Aquí empieza el footer */
+/* Aquí empieza el footer */
+
+footer .footer-area .footer_menu ul li{
+    list-style: none;
+}
+
+footer .footer-area .footer_menu ul li a{
+        color: initial;
+        text-decoration: none;
+        line-height: 2em;
+}
+
+footer .footer-area .footer_menu ul{
+    padding-left: 0;
+}
+
+footer .footer-area .footer_menu ul li a:hover{
+    color: #FDC34E;
+}
+
+footer .footer-area .footer_contact a{
+    color: initial;
+    text-decoration: none;
+}
+
+footer .footer-area .footer_contact a:hover{
+    color: #FDC34E;
+}
+
+footer .footer-area .footer_contact .single-info i.fa-2x{
+    font-size: 1.15em;
+    margin-right: 10px;
+}
+
+footer .footer-area .footer_contact .single-info{
+    padding-bottom: 10px;
+}
+
+footer .footer-area{
+    background-color: #f1f1f1;
+    padding: 2em 0;
+}
+
+footer .footer-area img.img-fd{
+    width: 60%;
+}
+
+footer .footer-area .condusef{
+    width: 50%;
+    padding-top: 7px;
+}
+
+footer .footer-area .buro{
+    width: 35%;
+}
+
+footer .copyright_area{
+    padding: 2em 0; 
+}
+
+footer .copyright_text{
+    background: #232323;
+    padding-top: 10px;
+    text-align: center;
+    color: #ffffff;
+    letter-spacing: 1.5px;
+}
+
+footer .copyright_text p{
+    font-size: .85em;
+}
+
+/* Aquí termina el footer */
+
+/* Aquí empieza contacto */
+
+.contact_form{
+    padding: 1em 3em 3em 3em;
+}
+/* Aquí termina contacto */
+
+/* aquí empieza el formulario */
+
+.form-control-fd-diss{
+    border-radius: 0px;
+    border: 2px solid #e9ecef;
+    padding: 8px 15px;
+}
+
+.contact_form .form_group {
+    margin-bottom: 20px;
+}
+
+.form_group select {
+    border-radius: 0;
+    width: 100%;
+    border-radius: 0px;
+    border: 2px solid #066B8E;
+    padding: 8px 15px;
+}
+
+hr:not([size]) {
+    height: 2px;
+}
+
+hr {
+    margin: 2rem 0 3rem 0;
+    color: #066B8E;
+    background-color: currentColor;
+    border: 0;
+    opacity: 1;
+}
+
+/* estilos img_documents */
+
+.wrap-custom-file {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    height: 180px;
+    margin: 20px 0.5rem 1rem;
+    text-align: center;
+}
+
+.wrap-custom-file h5{
+    margin-bottom: .75rem;
+}
+
+.wrap-custom-file input[type="file"] {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 2px;
+    height: 2px;
+    overflow: hidden;
+    opacity: 0;
+}
+
+.wrap-custom-file label {
+    z-index: 1;
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    overflow: hidden;
+    padding: 0 0.5rem;
+    cursor: pointer;
+    background-color: #EFEFEF;
+    border-radius: 10px;
+    -webkit-transition: -webkit-transform 0.4s;
+    transition: -webkit-transform 0.4s;
+    transition: transform 0.4s;
+    transition: transform 0.4s, -webkit-transform 0.4s;
+}
+
+.wrap-custom-file label span {
+    display: block;
+    margin-top: 1.2rem;
+    font-size: 1.4rem;
+    color: #777;
+    -webkit-transition: color 0.4s;
+    transition: color 0.4s;
+}
+
+.wrap-custom-file label .fa {
+    position: absolute;
+    bottom: 2rem;
+    left: 50%;
+    -webkit-transform: translatex(-50%);
+    transform: translatex(-50%);
+    color: #FDC34E;
+    -webkit-transition: color 0.4s;
+    transition: color 0.4s;
+}
+
+.wrap-custom-file label:hover {
+    -webkit-transform: translateY(-1rem);
+    transform: translateY(-1rem);
+}
+
+.wrap-custom-file label:hover span {
+    color: #333;
+}
+
+.wrap-custom-file label.file-ok {
+    background-size: cover;
+    background-position: center;
+}
+
+.wrap-custom-file label.file-ok span {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 0.3rem;
+    font-size: 1.1rem;
+    color: #000;
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+.wrap-custom-file label.file-ok .fa {
+    display: none;
+}
+
+/* estilos download botón */
+
+.wrap-custom-file-down {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    height: 110px;
+    margin: 20px 0.5rem 1rem;
+    text-align: center;
+}
+
+.wrap-custom-file-down h5{
+    margin-bottom: .75rem;
+}
+
+.wrap-custom-file-down input[type="file"] {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 2px;
+    height: 2px;
+    overflow: hidden;
+    opacity: 0;
+}
+
+.wrap-custom-file-down label {
+    z-index: 1;
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    overflow: hidden;
+    padding: 0 0.5rem;
+    cursor: pointer;
+    background-color: #EFEFEF;
+    border-radius: 10px;
+    -webkit-transition: -webkit-transform 0.4s;
+    transition: -webkit-transform 0.4s;
+    transition: transform 0.4s;
+    transition: transform 0.4s, -webkit-transform 0.4s;
+}
+
+.wrap-custom-file-down label span {
+    display: block;
+    margin-top: 1.2rem;
+    font-size: 1.4rem;
+    color: #777;
+    -webkit-transition: color 0.4s;
+    transition: color 0.4s;
+}
+
+.wrap-custom-file-down label .fa {
+    position: absolute;
+    bottom: 1.5rem;
+    left: 50%;
+    -webkit-transform: translatex(-50%);
+    transform: translatex(-50%);
+    color: #FDC34E;
+    -webkit-transition: color 0.4s;
+    transition: color 0.4s;
+}
+
+.wrap-custom-file-down label:hover {
+    -webkit-transform: translateY(-1rem);
+    transform: translateY(-1rem);
+}
+
+.wrap-custom-file-down label:hover span {
+    color: #333;
+}
+
+.wrap-custom-file-down label.file-ok {
+    background-size: cover;
+    background-position: center;
+}
+
+.wrap-custom-file-down label.file-ok span {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 0.3rem;
+    font-size: 1.1rem;
+    color: #000;
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+.wrap-custom-file-down label.file-ok .fa {
+    display: none;
+}
+
+
+@media screen and (max-width: 768px){
+    .head-title{
+        margin-top: 25%;
+    }
+    
+}
+
+
+
