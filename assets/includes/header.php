@@ -4,7 +4,7 @@ function active($currect_page)
     $url_array =  explode('/', $_SERVER['REQUEST_URI']);
     $url = end($url_array);
     if ($currect_page == $url) {
-        echo 'active'; //class name in css
+        echo 'active_link'; //class name in css
     }
 }
 ?>
@@ -29,7 +29,7 @@ function active($currect_page)
     <!-- page title -->
     <title>Sofortaleza</title>
     <!-- Favicon Icon -->
-    <link rel="shortcut icon" href="assets/images/favicon.png" type="image/png">
+    <link rel="shortcut icon" href="assets/images/factor_fav.png" type="image/png">
     <!-- All css -->
     <!--Bootstrap css-->
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
@@ -42,16 +42,16 @@ function active($currect_page)
     <link rel="stylesheet" href="assets/css/sidebar-menu.css">
     <!--animate css-->
     <link rel="stylesheet" href="assets/css/animate.css">
-   
+    <!--style css-->
+    <link rel="stylesheet" href="assets/css/style.css">
     <!--Style New Design-->
-    <link title="refresh" rel="stylesheet"  href="assets/css/style-fd.css">
+    <link rel="stylesheet" href="assets/css/style-fd.css">
     <link rel="stylesheet" href="assets/js/datatables/datatables.min.css">
     <link rel="stylesheet" href="assets/js/datatables/dataTables.bootstrap4.css">
-    <link rel="stylesheet" href="assets/css/sweetalert2.css">  
 </head>
 
 <body>
-    <div id="loadAfterCSS" style="display:none">   <!-- Preloader -->
+    <!-- Preloader -->
     <div class="preloader">
         <div class="lds-ripple">
             <div></div>
@@ -63,32 +63,17 @@ function active($currect_page)
         <div class="container">
             <nav class="navbar navbar-expand-lg navbar-light">
                 <div class="container-fluid">
-
-                    <a class="navbar-brand" href="index.php#"><img src="assets\images\sofortaleza.png" class="img-fluid" style="width: 300px" alt=""></a>
-                   
+                    <a class="navbar-brand" href="#">Aquí va el logo</a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav me-auto mb-2 mb-lg-0" style="margin-left:15%; font-weight:bold">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                             <li class="nav-item">
-                                <a class="a-menu nav-link <?php active('index.php') ?>" href="index.php#about">Acerca de</a>
+                                <a class="nav-link active" aria-current="page" href="#">Home</a>
                             </li>
                             <li class="nav-item">
-                                <a class="a-menu nav-link <?php active('solicitalo-ahora.php') ?>" href="solicitalo-ahora.php">Solicitalo ahora</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="a-menu nav-link <?php active('asociados.php') ?>" href="asociados.php">Asociados</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="a-menu nav-link <?php active('para-empresas.php') ?>" href="para-empresas.php">Para Empresas</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="a-menu nav-link <?php active('contacto.php') ?>" href="contacto.php">Contacto</a>
-                            </li>
-                            
-                            
-
+                                <a class="nav-link" href="#">Link</a>
                         </ul>
                     </div>
                 </div>

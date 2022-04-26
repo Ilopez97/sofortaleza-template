@@ -64,14 +64,7 @@ h6{
 .button_box-fd{
     padding: 10px 0px;
 }
-.a-menu{
-    text-transform: uppercase !important;
-    color: #1B4F5D !important;
-}
-.a-menu:hover{
-    text-transform: uppercase !important;
-    color: #FDC34E !important;
-}
+
 .btn-fd{
     background-color: #FDC34E;
     border-radius: 10px;
@@ -79,22 +72,10 @@ h6{
     font-weight: 500;
     min-width: 220px;
 }
-.btn-sec{
-    background-color: #333333;
-    border-radius: 10px;
-    padding: 8px 40px;
-    font-weight: 500;
-    min-width: 220px;
-    color:white;
-}
 
 .btn-fd:hover{
     background-color: #333333;
     color: white;
-}
-.btn-sec:hover{
-    background-color: #FDC34E;
-    color: black;
 }
 
 .link-form-fd{
@@ -137,12 +118,19 @@ h6{
     background-size: cover;
     background-attachment: fixed;
 }
-.bk-home2{
-    background-image: url("../images/sofortaleza-header-legal.jpg");
+
+.bk-col-home-producto-1{
+    background-image: url("../images/sofortaleza-adelanto-de-sueldo.jpg");
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
-    background-attachment: fixed;
+}
+
+.bk-col-home-producto-2{
+    background-image: url("../images/sofortaleza-credito-a-plazo-fijo.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .bk-home-2{
@@ -195,6 +183,23 @@ h6{
     font-size: 1.2rem;
 }
 
+.ol-bases{
+    font-size: 1.2em;
+    font-weight: 600;
+}
+
+.li-bases{
+    margin-bottom: 15px;
+}
+
+.enlace-bases{
+    color: #FDC34E;
+}
+
+.enlace-bases:hover{
+    color: #333333;
+}
+
 .row-fd{
     height: 100%;
 }
@@ -238,8 +243,16 @@ h6{
     width: 50%;
 }
 
+.w60-fd{
+    width: 60%;
+}
+
 .w70-fd{
     width: 70%;
+}
+
+.w100-fd{
+    width: 100%;
 }
 
 .container-flex-row-responsive-col,
@@ -326,6 +339,7 @@ img.icon-svg-3 {
         padding: 0px 15px;
     }
     .w50-fd,
+    .w60-fd,
     .w70-fd{
         width: 100%;
     }
@@ -481,7 +495,7 @@ img.icon-svg-3 {
 }
 
 .head-title{
-    margin-top: 10%;
+    margin-top: 15%;
 }
 
 .head-title h2{
@@ -504,8 +518,6 @@ img.icon-svg-3 {
 .card-in p{
     margin-bottom: .65rem;
 }
-
-/* Aquí empieza el footer */
 /* Aquí empieza el footer */
 
 footer .footer-area .footer_menu ul li{
@@ -812,6 +824,3 @@ hr {
     }
     
 }
-
-
-

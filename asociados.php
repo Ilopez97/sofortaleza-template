@@ -1,11 +1,5 @@
 <?php
-session_start();
-include('assets/includes/header.php'); 
-if(isset($_SESSION['token_session'])){
-    session_unset();
-    session_destroy();
-}
-?>
+include('assets/includes/header.php'); ?>
 <section>
     <div class="container-all-fd bk-asociados container-fluid vh-100 ">
         <div class="container py-5 h-100">
@@ -22,7 +16,7 @@ if(isset($_SESSION['token_session'])){
                                                 <div class="col-12 ">
                                                     <div class="form-outline form-white">
                                                         <label class="form-label-fd form-label" for="rfc_empl">RFC de empresa</label>
-                                                        <input type="text" id="rfc" class="form-control-fd form-control" placeholder="Ingrese RFC" required>
+                                                        <input type="text" id="rfc_empl" class="form-control-fd form-control" placeholder="Ingrese su RFC o Celular" required>
                                                     </div>
                                                 </div> <br>
                                                 <div class="col-12">
@@ -50,10 +44,4 @@ if(isset($_SESSION['token_session'])){
 </section>
 <?php
 include('assets/includes/footer.php');
-?> 
-<div>
-<script src="js/swals.js"></script>
-<script src="js/asociados/login.js"></script>
-<script src="js/swal-modals.js"></script>
-<script src="js/session.js"></script>
-</div>
+?>

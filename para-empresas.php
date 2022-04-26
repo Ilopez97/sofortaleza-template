@@ -109,10 +109,10 @@ include('assets/includes/header.php'); ?>
             <div class="row mt-4 justify-content-center align-items-center">
                 <div class="container-flex-row-responsive-col col-12 col-sm-6-fd">
                     <div class="button_box-fd button_box w50-fd text-center">
-                         <a href="solicitalo-ahora.php" class="btn-fd btn deneb_btn btn-block">Solicitalo ahora</a>
+                        <button class="btn-fd btn deneb_btn btn-block">Solicitalo ahora</button>
                     </div>
                     <div class="button_box-fd button_box w50-fd text-center">
-                        <a href="https://play.google.com/store/apps/details?id=mx.avasis.microfin_factor_fortaleza" target="_blank" class="btn-fd btn deneb_btn btn-block">Descarga la App</a>    
+                        <button class="btn-fd btn deneb_btn btn-block">Descarga la App</button>
                     </div>
                 </div>
             </div>
