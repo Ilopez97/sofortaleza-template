@@ -1,20 +1,43 @@
 <!-- Start footer -->
-<footer style="display:none">
+<footer class="footer-general-fd" style="display:none">
 <div class="container-fluid footer-area">
         <div class="container">
-            <div class="row">
-                <div class="col-12 col-md-3">
+            <div class="row row-footer-fd">
+                <div class="col-12 col-md-3 logos-footer">
                     <img class="img-fd mx-auto d-block" src="assets/images/logo sofortaleza 2.png" alt="logo sofortaleza">
                     <div class="row mt-4">
-                        <div class="col-6 mx-auto d-block">
+                        <div class="col-4">
                             <a href="https://www.condusef.gob.mx/" target="_blank"> <img class="mx-auto d-block condusef" src="assets/images/condusef.png" alt="logo sofortaleza"></a>
                         </div>
-                        <div class="col-6 mx-auto d-block">
+                        <div class="col-4">
                             <a href="https://www.buro.gob.mx/" target="_blank"> <img class="mx-auto d-block buro" src="assets/images/buro.png" alt="logo sofortaleza"></a>
                         </div>
                     </div>
                 </div>
-                <div class="col-12 col-md-3">
+                <div class="col-12 col-md-2 social-media-footer">
+                    <h5>Social</h5>
+                    <div class="row mt-4">
+                        <div class="col-2 col-md-3">
+                            <a href="https://facebook.com/Sofortaleza-105451558762584/" target="_blank" class="link-rs-footer-fd">
+                                <img
+                                src="assets/icons/iconfinder_facebook.png"
+                                alt="Facebook"
+                                class="icon-rs-footer-fd"
+                                />
+                            </a>
+                        </div>
+                        <div class="col-2 col-md-3">
+                            <a href="https://instagram.com/sofortaleza.parati" target="_blank" class="link-rs-footer-fd">
+                                <img
+                                src="assets/icons/iconfinder_instagram.png"
+                                alt="Instagram"
+                                class="icon-rs-footer-fd"
+                                />
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-2">
                     <h5>Mapa de sitio</h5>
                     <div class="bottom-nav">
                         <nav class="footer_menu">
@@ -29,7 +52,7 @@
                         </nav>
                     </div>
                 </div>
-                <div class="col-12 col-md-3">
+                <div class="col-12 col-md-2">
                     <h5>Legales</h5>
                     <div class="bottom-nav">
                         <nav class="footer_menu">
@@ -42,7 +65,7 @@
                         </nav>
                     </div>
                 </div>
-                <div class="col-12 col-md-3 footer_contact">
+                <div class="col-9 col-md-3 footer_contact">
                     <h5>Contacto</h5>
                     <div class="single-info">
                         <i class="fas fa-phone-alt fa-2x"></i><span><a href="tel:55 8936 9894">55 8936 9894</a></span>

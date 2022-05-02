@@ -470,6 +470,78 @@ img.icon-svg-3 {
     }
 }
 
+/*AQUI EMPIEZA LO DEL HEADER*/
+
+.header-fd{
+    position: sticky;
+    top: 0px;
+    z-index: 100;
+    padding: 0px 28px;
+    background-color: rgba(255, 255, 255, 0.952);
+    box-shadow: 0 5px 6px -6px #1B4F5D;
+}
+
+.img-logo-fd{
+    width: 300px;
+}
+
+.navbar-fd{
+    width: 62%;
+    justify-content: end;
+}
+
+.container-rs-fd{
+    width: 8%;
+    justify-content: end;
+}
+
+.link-rs-header-fd{
+    margin: 0px 10px;
+}
+
+.icon-rs-header-fd{
+    width: 24px;
+    margin-bottom: 2px;
+}
+.btn-navbar-fd{
+    color: #FFFFFF !important;
+    background-color: #1b4f5db4;
+    border: 0px;
+}
+
+.btn-navbar-fd>img{
+    color: #FFFFFF !important;
+    width: 22px;
+}
+
+@media screen and (max-width: 577px) {
+    .header-fd{
+        padding: 0px;
+    }
+    .container-nav-responsisve-fd{
+        flex-direction: row;
+    }
+    .navbar-brand{
+        width: 75%;
+    }
+    .navbar-toggler{
+        width: 15%;
+    }
+}
+
+@media screen and (min-width: 991px) and (max-width: 1220px){
+    .img-logo-fd{
+        width: 250px;
+    }
+    .navbar-fd{
+        width: 63%;
+    }
+    .container-rs-fd{
+        width: 7%;
+
+    }
+}
+
 /* aquí empieza lo de Cesar */
 
 .header-section{
@@ -508,6 +580,11 @@ img.icon-svg-3 {
 /* Aquí empieza el footer */
 /* Aquí empieza el footer */
 
+footer.footer-general-fd{
+    padding-top: 30px;
+    background-color: #f1f1f1;
+}
+
 footer .footer-area .footer_menu ul li{
     list-style: none;
 }
@@ -545,8 +622,7 @@ footer .footer-area .footer_contact .single-info{
 }
 
 footer .footer-area{
-    background-color: #f1f1f1;
-    padding: 2em 0;
+    padding: 1.5em 0;
 }
 
 footer .footer-area img.img-fd{
@@ -554,16 +630,21 @@ footer .footer-area img.img-fd{
 }
 
 footer .footer-area .condusef{
-    width: 50%;
+    width: 80%;
     padding-top: 7px;
 }
 
 footer .footer-area .buro{
-    width: 35%;
+    width: 54%;
 }
 
 footer .copyright_area{
-    padding: 2em 0; 
+    padding: 1.5em 0; 
+}
+
+.copyright_area .container{
+    border-top: 1px solid #1b4f5da2;
+    padding-top: 30px;
 }
 
 footer .copyright_text{
@@ -576,6 +657,39 @@ footer .copyright_text{
 
 footer .copyright_text p{
     font-size: .85em;
+}
+
+.logos-footer>div{
+    justify-content: center;
+}
+
+.link-rs-footer-fd{
+    margin-bottom: 10px;
+}
+
+.icon-rs-footer-fd{
+    width: 35px;
+}
+
+@media screen and (max-width: 577px){
+    .row-footer-fd{
+        justify-content: center;
+        padding: 0px 10px;
+    }
+    .logos-footer{
+        margin-bottom: 20px;
+    }
+    .social-media-footer{
+        border-top: 2px dashed #1B4F5D;
+        padding-top: 30px;
+    }
+    .social-media-footer>div{
+        justify-content: center;
+    }
+    .row-footer-fd>div{
+        margin-top: 20px;
+        text-align: center;
+    }
 }
 
 /* Aquí termina el footer */

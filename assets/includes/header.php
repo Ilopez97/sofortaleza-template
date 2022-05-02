@@ -59,18 +59,18 @@ function active($currect_page)
         </div>
     </div>
     <!-- Start header_area -->
-    <header class="header_area header_v1 transparent_header">
-        <div class="container">
+    <header class="header_area header_v1 transparent_header header-fd">
+        <div class="container-fluid">
             <nav class="navbar navbar-expand-lg navbar-light">
-                <div class="container-fluid">
+                <div class="container-fluid container-nav-responsisve-fd">
 
-                    <a class="navbar-brand" href="index.php#"><img src="assets\images\sofortaleza.png" class="img-fluid" style="width: 300px" alt=""></a>
+                    <a class="navbar-brand" href="index.php#"><img src="assets\images\sofortaleza.png" class="img-fluid img-logo-fd" alt=""></a>
                    
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
+                    <button class="navbar-toggler btn-navbar-fd" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <img src="assets/icons/menu-icon.svg" alt="menu-icon">
                     </button>
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav me-auto mb-2 mb-lg-0" style="margin-left:15%; font-weight:bold">
+                    <div class="collapse navbar-collapse navbar-fd" id="navbarSupportedContent">
+                        <ul class="navbar-nav mb-2 mb-lg-0" style="margin-left:5%; font-weight:bold">
                             <li class="nav-item">
                                 <a class="a-menu nav-link <?php active('index.php') ?>" href="index.php#about">Acerca de</a>
                             </li>
@@ -86,9 +86,29 @@ function active($currect_page)
                             <li class="nav-item">
                                 <a class="a-menu nav-link <?php active('contacto.php') ?>" href="contacto.php">Contacto</a>
                             </li>
-                            
-                            
 
+                        </ul>
+                    </div>
+                    <div class="collapse navbar-collapse container-rs-fd">
+                        <ul class="navbar-nav mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a href="https://facebook.com/Sofortaleza-105451558762584/" target="_blank" class="link-rs-header-fd">
+                                    <img
+                                    src="assets/icons/icon-facebook-sofortaleza.svg"
+                                    alt="Facebook"
+                                    class="icon-rs-header-fd"
+                                    />
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="https://instagram.com/sofortaleza.parati" target="_blank" class="link-rs-header-fd">
+                                    <img
+                                    src="assets/icons/icon-instagram-sofortaleza.svg"
+                                    alt="Instagram"
+                                    class="icon-rs-header-fd"
+                                    />
+                                </a>
+                            </li>
                         </ul>
                     </div>
                 </div>
