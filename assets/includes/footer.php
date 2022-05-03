@@ -109,7 +109,7 @@
 <script src="assets/js/vendor/jquery-1.12.4.min.js"></script>
 
 <!-- signature js -->
-<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+<script type="text/javascript" src="assets/js/jquery-ui.min.js"></script>
 
 <script type="text/javascript" src="assets/js/jquery.signature.min.js"></script>
 <script src="assets/js/jquery.ui.touch-punch.min.js"></script>
@@ -139,8 +139,87 @@
 <script src="assets\js\datatables\dataTables.bootstrap4.min.js"></script>
 
 
-</body>
+</div>
+<!-- funcion para forzar cache en css -->
+<script>
+$(document).ready(function() {
+    let hash = (window.top.location.hash.substr(1))
 
-<!-- Mirrored from demo.tortoizthemes.com/deneb-html/deneb-ltr/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 03 Sep 2020 20:51:44 GMT -->
+
+    if (hash == "about") {
+        setTimeout(() => {
+            window.location.hash = ""
+            setTimeout(() => {
+                window.location.hash = "about"
+            }, 500);
+        }, 100);
+
+    }
+    if (hash == "productos") {
+        window.location.hash = ""
+        setTimeout(() => {
+            window.location.hash = "productos"
+        }, 500);
+
+    }
+
+
+
+});
+$(".ad").click(function(e) {
+
+
+    if (window.location.pathname == '/index.php' || window.location.pathname == '/') {
+
+        setTimeout(() => {
+
+            window.location.hash = "about";
+        }, 100);
+
+    } else {
+        $(location).attr("href", 'index.php#about');
+        setTimeout(() => {
+            window.location.hash = "about";
+        }, 200);
+    }
+    e.preventDefault();
+
+
+
+});
+$(".pd").click(function(e) {
+    if (window.location.pathname == '/index.php' || window.location.pathname == '/') {
+        window.location.hash = "productos";
+    } else {
+        $(location).attr("href", 'index.php#productos');
+        setTimeout(() => {
+            window.location.hash = "productos";
+        }, 200);
+    }
+    e.preventDefault();
+
+});
+</script>
+
+<script>
+(function() {
+    var h, a, f;
+    a = document.getElementsByTagName('link');
+    for (h = 0; h < a.length; h++) {
+        f = a[h];
+        if (f.title.toLowerCase().match(/refresh/) && f.href) {
+            var g = f.href.replace(/(&|\?)rnd=\d+/, '');
+            f.href = g + (g.match(/\?/) ? '&' : '?');
+            f.href += 'rnd=' + (new Date().valueOf());
+        }
+    } // for
+    setTimeout(() => {
+        $("#loadAfterCSS").show();
+        $("footer").show();
+    }, 300);
+
+})()
+</script>
+</body>
 
 </html>

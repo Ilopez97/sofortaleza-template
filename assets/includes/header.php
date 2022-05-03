@@ -1,10 +1,11 @@
 <?php
+
 function active($currect_page)
 {
     $url_array =  explode('/', $_SERVER['REQUEST_URI']);
     $url = end($url_array);
     if ($currect_page == $url) {
-        echo 'active_link'; //class name in css
+        echo 'active'; //class name in css
     }
 }
 ?>
@@ -29,7 +30,7 @@ function active($currect_page)
     <!-- page title -->
     <title>Sofortaleza</title>
     <!-- Favicon Icon -->
-    <link rel="shortcut icon" href="assets/images/factor_fav.png" type="image/png">
+    <link rel="shortcut icon" href="assets/images/favicon.png" type="image/png">
     <!-- All css -->
     <!--Bootstrap css-->
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
@@ -42,76 +43,85 @@ function active($currect_page)
     <link rel="stylesheet" href="assets/css/sidebar-menu.css">
     <!--animate css-->
     <link rel="stylesheet" href="assets/css/animate.css">
-    <!--style css-->
-    <link rel="stylesheet" href="assets/css/style.css">
+
     <!--Style New Design-->
-    <link rel="stylesheet" href="assets/css/style-fd.css">
+    <link title="refresh" rel="stylesheet" href="assets/css/style-fd.css">
     <link rel="stylesheet" href="assets/js/datatables/datatables.min.css">
     <link rel="stylesheet" href="assets/js/datatables/dataTables.bootstrap4.css">
+    <link rel="stylesheet" href="assets/css/sweetalert2.css">
 </head>
 
 <body>
-    <!-- Preloader -->
-    <div class="preloader">
-        <div class="lds-ripple">
-            <div></div>
-            <div></div>
+    <div id="loadAfterCSS" style="display:none">
+        <!-- Preloader -->
+        <div class="preloader">
+            <div class="lds-ripple">
+                <div></div>
+                <div></div>
+            </div>
         </div>
-    </div>
-    <!-- Start header_area -->
-    <header class="header_area header_v1 transparent_header header-fd">
-        <div class="container-fluid">
-            <nav class="navbar navbar-expand-lg navbar-light">
-                <div class="container-fluid container-nav-responsisve-fd">
+        <!-- Start header_area -->
+        <header class="header_area header_v1 transparent_header header-fd">
+            <div class="container-fluid">
+                <nav class="navbar navbar-expand-lg navbar-light">
+                    <div class="container-fluid container-nav-responsisve-fd">
 
-                    <a class="navbar-brand" href="index.php#"><img src="assets\images\sofortaleza.png" class="img-fluid img-logo-fd" alt=""></a>
-                   
-                    <button class="navbar-toggler btn-navbar-fd" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                        <img src="assets/icons/menu-icon.svg" alt="menu-icon">
-                    </button>
-                    <div class="collapse navbar-collapse navbar-fd" id="navbarSupportedContent">
-                        <ul class="navbar-nav mb-2 mb-lg-0" style="margin-left:5%; font-weight:bold">
-                            <li class="nav-item">
-                                <a class="a-menu nav-link <?php active('index.php') ?>" href="index.php#about">Acerca de</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="a-menu nav-link <?php active('solicitalo-ahora.php') ?>" href="solicitalo-ahora.php">Solicitalo ahora</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="#">Home</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="a-menu nav-link <?php active('para-empresas.php') ?>" href="para-empresas.php">Para Empresas</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="a-menu nav-link <?php active('contacto.php') ?>" href="contacto.php">Contacto</a>
-                            </li>
+                        <a class="navbar-brand" href="index.php#"><img src="assets\images\sofortaleza.png"
+                                class="img-fluid img-logo-fd" alt=""></a>
 
-                        </ul>
+                        <button class="navbar-toggler btn-navbar-fd" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <img src="assets/icons/menu-icon.svg" alt="menu-icon">
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav me-auto mb-2 mb-lg-0" style="margin-left:15%; font-weight:bold">
+                                <li class="nav-item">
+                                    <a class="a-menu nav-link ad" href="#about">Acerca de</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="a-menu nav-link pd" href="#productos">Productos</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="a-menu nav-link <?php active('solicitalo-ahora.php') ?>"
+                                        href="solicitalo-ahora.php">Solicitalo ahora</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="a-menu nav-link <?php active('asociados.php') ?>"
+                                        href="asociados.php">Asociados</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="a-menu nav-link <?php active('para-empresas.php') ?>"
+                                        href="para-empresas.php">Para Empresas</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="a-menu nav-link <?php active('contacto.php') ?>"
+                                        href="contacto.php">Contacto</a>
+                                </li>
+
+
+
+                            </ul>
+                        </div>
+                        <div class="collapse navbar-collapse container-rs-fd">
+                            <ul class="navbar-nav mb-2 mb-lg-0">
+                                <li class="nav-item">
+                                    <a href="https://facebook.com/Sofortaleza-105451558762584/" target="_blank"
+                                        class="link-rs-header-fd">
+                                        <img src="assets/icons/icon-facebook-sofortaleza.svg" alt="Facebook"
+                                            class="icon-rs-header-fd" />
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="https://instagram.com/sofortaleza.parati" target="_blank"
+                                        class="link-rs-header-fd">
+                                        <img src="assets/icons/icon-instagram-sofortaleza.svg" alt="Instagram"
+                                            class="icon-rs-header-fd" />
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
-                    <div class="collapse navbar-collapse container-rs-fd">
-                        <ul class="navbar-nav mb-2 mb-lg-0">
-                            <li class="nav-item">
-                                <a href="https://facebook.com/Sofortaleza-105451558762584/" target="_blank" class="link-rs-header-fd">
-                                    <img
-                                    src="assets/icons/icon-facebook-sofortaleza.svg"
-                                    alt="Facebook"
-                                    class="icon-rs-header-fd"
-                                    />
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="https://instagram.com/sofortaleza.parati" target="_blank" class="link-rs-header-fd">
-                                    <img
-                                    src="assets/icons/icon-instagram-sofortaleza.svg"
-                                    alt="Instagram"
-                                    class="icon-rs-header-fd"
-                                    />
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </nav>
-        </div>
-    </header><!-- End header_area -->
+                </nav>
+            </div>
+        </header><!-- End header_area -->
