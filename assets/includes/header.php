@@ -74,8 +74,8 @@ function active($currect_page)
                             aria-expanded="false" aria-label="Toggle navigation">
                             <img src="assets/icons/menu-icon.svg" alt="menu-icon">
                         </button>
-                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                            <ul class="navbar-nav me-auto mb-2 mb-lg-0" style="margin-left:15%; font-weight:bold">
+                        <div class="collapse navbar-collapse navbar-fd" id="navbarSupportedContent">
+                            <ul class="navbar-nav mb-2 mb-lg-0" style="margin-left:5%; font-weight:bold">
                                 <li class="nav-item">
                                     <a class="a-menu nav-link ad" href="#about">Acerca de</a>
                                 </li>
