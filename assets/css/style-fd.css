@@ -17,6 +17,10 @@ h6{
     color: #1B4F5D;
 }
 
+.card-body>.text-card-fd{
+    margin-bottom: 8px;
+}
+
 .bk-asociados{
     background-image: url("../images/sofortaleza-asociados.jpg");
     background-position: center center;
@@ -43,6 +47,15 @@ h6{
 
 .card-fd{
     border-radius: 0px !important;
+    border: 0px;
+}
+
+#productos .card-fd{
+    box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+#productos .card-fd:hover{
+    box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.5);
 }
 
 .title-form-fd{
@@ -123,11 +136,15 @@ h6{
     .title-form-fd{
         font-size: 1.8rem;
     }
+    .card-fd>img{
+        max-height: 350px;
+    }
 }
 
 /* estilos del home */
+
 .bk-home1{
-    background-image: url("../images/sofotaleza-home.jpg");
+    background-image: url("../images/Banner-sofortaleza-3.jpg");
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -153,8 +170,36 @@ h6{
     background: linear-gradient(120deg, rgba(9,57,68,1) 0%, rgba(29,90,106,1) 70%, rgba(35,103,121,1) 100%);
 }
 
+.bk-home-3{
+    background-image: url("../images/fondo1.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bk-card-1-img-fd{
+    background-image: url("../images/1.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bk-card-2-img-fd{
+    background-image: url("../images/2.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 .bk-col-home-4{
     background-image: url("../images/sofortaleza-acerca.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bk-col-empresas-5{
+    background-image: url("../images/sofortaleza-para-empresas.jpg");
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -186,12 +231,20 @@ h6{
     color: #FDC34E;
 }
 
+.title-b-fd{
+    color: rgb(43, 43, 43);
+}
+
 .title-thin{
     font-weight: normal;
 }
 
 .t-large{
-    font-size: 3.2rem;
+    font-size: 3.5rem;
+}
+
+.t-large-2{
+    font-size: 2.4rem;
 }
 
 .text-impact{
@@ -218,7 +271,7 @@ h6{
 .row-fd{
     height: 100%;
 }
-
+/*
 .col-pleca-fd{
     height: 100%;
     background-image: url("../images/sofortaleza-diagonales-2.svg");
@@ -226,6 +279,7 @@ h6{
     background-repeat: no-repeat;
     background-size: cover;
 }
+*/
 
 .col-son-fd{
     width: 70%;
@@ -235,6 +289,10 @@ h6{
 .pd-r-fd,
 .pd-r0-fd{
     padding: 50px;
+}
+
+.pd-md-fd{
+    padding: 35px;
 }
 
 .pd-sm-fd{
@@ -313,11 +371,15 @@ img.icon-svg-3 {
 
 @media screen and (max-width: 576px){
     .bk-home1{
-        background-position: center center;
-        background-repeat: no-repeat;
-        background-size: cover;
+        background-image: url("../images/Banner-sofortaleza-3-cel.jpg");
+    }
+    .bk-home-3{
+        background-image: url("../images/fondo-7.jpg");
     }
     .bk-col-home-4{
+        display: none;
+    }
+    .bk-col-empresas-5{
         display: none;
     }
     .bk-col-home-5{
@@ -335,6 +397,9 @@ img.icon-svg-3 {
     .t-large{
         font-size: 2.8rem;
     }
+    .t-large-2{
+        font-size: 1.7rem;
+    }
     .col-son-fd{
         width: 90%;
     }
@@ -349,6 +414,9 @@ img.icon-svg-3 {
     }
     .pd-sm-fd{
         padding: 20px 5px;
+    }
+    .pd-md-fd{
+        padding: 30px 18px;
     }
     .pd-content-responsive{
         padding: 0px 15px;
@@ -371,9 +439,10 @@ img.icon-svg-3 {
 
 @media screen and (min-width: 577px) and (max-width: 768px){
     .bk-home1{
-        background-position: center right;
-        background-repeat: no-repeat;
-        background-size: cover;
+        background-image: url("../images/Banner-sofortaleza-3-tab.jpg");
+    }
+    .bk-home-3{
+        background-image: url("../images/fondo-6.jpg");
     }
     .col-pleca-fd{
         background-position: center center;
@@ -405,6 +474,12 @@ img.icon-svg-3 {
 }
 
 @media screen and (min-width: 769px) and (max-width: 1024px){
+    .bk-home1{
+        background-image: url("../images/Banner-sofortaleza-3-tab.jpg");
+    }
+    .bk-home-3{
+        background-image: url("../images/fondo-5.jpg");
+    }
     .pd-sm-fd{
         padding: 20px 15px;
     }
@@ -416,6 +491,9 @@ img.icon-svg-3 {
         flex: 0 0 auto;
         width: 50%;
     }
+    .col-son-fd{
+        width: 90%;
+    }
     .space-content-fd{
         padding-left: 30px;
         padding-bottom: 30px;
@@ -423,6 +501,12 @@ img.icon-svg-3 {
     .container-flex-row-responsive-col-sm{
         display: flex;
         flex-direction: column;
+    }
+    .t-large{
+        font-size: 3.2rem;
+    }
+    .t-large-2{
+        font-size: 2rem;
     }
 }
 
@@ -434,6 +518,12 @@ img.icon-svg-3 {
     .col-sm-6-fd{
         flex: 0 0 auto;
         width: 50%;
+    }
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1200px){
+    .bk-home-3{
+        background-image: url("../images/fondo-5.jpg");
     }
 }
 
@@ -485,9 +575,6 @@ img.icon-svg-3 {
     background: linear-gradient(120deg, rgba(195,195,195,1) 0%, rgba(241,241,241,1) 25%, rgba(241,241,241,1) 75%, rgba(195,195,195,1) 100%);
 }
 
-.text-justify-fd{
-    text-align: justify;
-}
 
 .subtitle-politicas-fd{
     font-size: 1.4rem;

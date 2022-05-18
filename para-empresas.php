@@ -20,9 +20,9 @@ include('assets/includes/header.php'); ?>
                     <p class="text-justify-fd">Nuestra prioridad es el bienestar financiero de los empleados por lo que cuidamos que los montos solicitados sean equivalentes a sus ingresos, topando la línea de crédito a un 30% de sus percepciones netas del período.</p>
                     <p class="text-justify-fd">Ofrecemos un servicio eficiente e innovador con la mejor tecnología disponible, comisiones competitivas y atención personal que el empleado percibirá como un beneficio otorgado por su empresa.</p>
                 </div>
-                <img class="img-bk-only-movil-fd" src="assets/images/sofortaleza-acerca.jpg" alt="sofortaleza-acerca">
+                <img class="img-bk-only-movil-fd" src="assets/images/sofortaleza-para-empresas.jpg" alt="sofortaleza-acerca">
             </div>
-            <div class="col-12 col-md-6 bk-col-home-4">
+            <div class="col-12 col-md-6 bk-col-empresas-5">
             </div>
         </div>
     </div>
@@ -33,7 +33,7 @@ include('assets/includes/header.php'); ?>
             <div class="row">
                 <div class="col-12 d-flex flex-column justify-content-center align-items-center text-center">
                     <h2 class="title-section-o-fd">MISIÓN</h2>
-                    <p class="font-color-w text-center w70-fd">Brindar solución a las necesidades financieras de nuestros usuarios mediante productos de crédito que mejoren su calidad de vida a través de las nuevas tecnologías. </p>
+                    <p class="font-color-w text-center w70-fd" style="font-size:1.2em;">Brindar solución a las necesidades financieras de nuestros usuarios mediante productos de crédito que mejoren su calidad de vida a través de las nuevas tecnologías. </p>
                 </div>
             </div>
         </div>
