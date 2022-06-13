@@ -101,10 +101,27 @@ h6{
     min-width: 220px;
     color:white;
 }
+.btn-new-client{
+    background-color: #00879d;
+    border-radius: 10px;
+    padding: 8px 40px;
+    font-weight: 500;
+    min-width: 220px;
+    color:white;
+}
 .btn-fd:hover{
     background-color: #333333;
     color: white;
 }
+.btn-sec:hover{
+    background-color: #FDC34E;
+    color: black;
+}
+.btn-new-client:hover{
+    background-color: #333333;
+    color: white;
+}
+
 
 .link-form-fd{
     font-size: 0.8em;
